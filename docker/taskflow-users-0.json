@@ -1,0 +1,78 @@
+{
+  "realm" : "template",
+  "users" : [ {
+    "id" : "32bdf08f-f81f-4cd2-8508-6ab235b6bcab",
+    "username" : "admin",
+    "firstName" : "firstName",
+    "lastName" : "lastName",
+    "email" : "admin@mail.com",
+    "emailVerified" : true,
+    "createdTimestamp" : 1760459854423,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "483cb7c2-2106-4a7d-b161-9a340ea5ac2c",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1760460982112,
+      "secretData" : "{\"value\":\"Um5AY5V20ti3ppV6kpCySzv08xrcWT9R05XGh5fg0O4=\",\"salt\":\"SCcRmowimYJATWslVnBbRQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-template" ],
+    "clientRoles" : {
+      "template" : [ "template.admin" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "cb1fbc1f-e793-4529-b26c-d224d3633dec",
+    "username" : "tuffi",
+    "firstName" : "tuffi_f",
+    "lastName" : "tuffi_l",
+    "email" : "rudi1947@yandex.ru",
+    "emailVerified" : true,
+    "createdTimestamp" : 1760464333876,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "github",
+      "userId" : "100721921",
+      "userName" : "tuffii"
+    } ],
+    "realmRoles" : [ "default-roles-template" ],
+    "clientRoles" : {
+      "template" : [ "template.user" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "557bc36a-922e-46a0-93af-244ccdc8ea87",
+    "username" : "user",
+    "email" : "user@mail.com",
+    "emailVerified" : true,
+    "createdTimestamp" : 1760459873076,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "ba7801df-ac02-4564-9fe0-44b5ea94cb9c",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1760460991527,
+      "secretData" : "{\"value\":\"YmJ7owTZxzAg2s74u7+r/u6xequeiLXX4qBfCuL2JeY=\",\"salt\":\"5EVP4bCPpgqx9puJ5lVXsw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-template" ],
+    "clientRoles" : {
+      "template" : [ "template.user" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

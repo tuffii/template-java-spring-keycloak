@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: template-java-spring-keycloak
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: template
+            client-secret: <CLIENT_KEY>
+            client-name: template
+            authorization-grant-type: authorization_code
+            scope: openid, profile, email
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9090/realms/template
+
+server:
+  port: 8091
